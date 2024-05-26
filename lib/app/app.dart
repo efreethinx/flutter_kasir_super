@@ -23,10 +23,11 @@ class MyApp extends StatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return const Scaffold(
                 body: Center(
-                    child: RegularText(
-                  'Page Not Found',
-                  textAlign: TextAlign.center,
-                )),
+                  child: RegularText(
+                    'Page Not Found',
+                    textAlign: TextAlign.center,
+                  ),
+                ),
               );
             });
         }

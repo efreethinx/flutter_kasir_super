@@ -9,6 +9,7 @@ class LightTheme {
   final Color errorColor = AppColors.red;
   final Color scaffoldColor = AppColors.white;
   final Color textSolidColor = AppColors.black;
+  final Color borderColor = AppColors.white;
 
   TextTheme get textTheme => TextTheme(
       headlineLarge: TextStyle(
@@ -52,16 +53,24 @@ class LightTheme {
         color: textSolidColor,
       ));
 
-  ThemeData get theme => ThemeData(
-        colorScheme: ColorScheme.light(
-          primary: primaryColor,
-          secondary: primaryColor,
-          error: errorColor,
+  ThemeData get theme {
+    return ThemeData(
+      colorScheme: ColorScheme.light(
+        primary: primaryColor,
+        secondary: primaryColor,
+        error: errorColor,
+      ),
+      scaffoldBackgroundColor: scaffoldColor,
+      useMaterial3: true,
+      fontFamily: 'Poppins',
+      textTheme: textTheme,
+      appBarTheme: const AppBarTheme(centerTitle: false),
+      cardTheme: CardTheme(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(Dimens.dp8),
+          side: BorderSide(color: borderColor),
         ),
-        scaffoldBackgroundColor: scaffoldColor,
-        useMaterial3: true,
-        fontFamily: 'Poppins',
-        textTheme: textTheme,
-        appBarTheme: const AppBarTheme(centerTitle: false),
-      );
+      ),
+    );
+  }
 }
