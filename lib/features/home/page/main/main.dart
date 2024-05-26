@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('BerandaX')),
+      appBar: AppBar(title: const Text('Beranda')),
       body: const SingleChildScrollView(
         padding: EdgeInsets.all(Dimens.dp24),
         child: Column(
