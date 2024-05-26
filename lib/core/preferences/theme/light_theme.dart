@@ -9,7 +9,7 @@ class LightTheme {
   final Color errorColor = AppColors.red;
   final Color scaffoldColor = AppColors.white;
   final Color textSolidColor = AppColors.black;
-  final Color borderColor = AppColors.white;
+  final Color borderColor = AppColors.white[400]!;
 
   TextTheme get textTheme => TextTheme(
       headlineLarge: TextStyle(
