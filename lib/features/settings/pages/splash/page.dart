@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_kasir_super/core/core.dart';
+import 'package:flutter_kasir_super/features/home/home.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -14,7 +15,7 @@ class _SplashPageState extends State<SplashPage> {
     Future.delayed(const Duration(seconds: 3)).then(
       (value) => Navigator.pushNamedAndRemoveUntil(
         context,
-        '/home',
+        HomePage.routeName,
         (route) => false,
       ),
     );

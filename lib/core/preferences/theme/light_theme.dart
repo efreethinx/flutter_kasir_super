@@ -62,5 +62,6 @@ class LightTheme {
         useMaterial3: true,
         fontFamily: 'Poppins',
         textTheme: textTheme,
+        appBarTheme: const AppBarTheme(centerTitle: false),
       );
 }
