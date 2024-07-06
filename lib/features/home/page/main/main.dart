@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
                     'Total Penjualan',
                     textAlign: TextAlign.center,
                   ),
-                  RegularText('Rp. 5.000.000.000'),
+                  RegularText('Rp. 50.000.000.000'),
                   RegularText('Lihat DetailO '),
                 ],
               ),
