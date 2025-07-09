@@ -14,6 +14,7 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     Future.delayed(const Duration(seconds: 3)).then(
       (value) => Navigator.pushNamedAndRemoveUntil(
+        // ignore: use_build_context_synchronously
         context,
         HomePage.routeName,
         (route) => false,

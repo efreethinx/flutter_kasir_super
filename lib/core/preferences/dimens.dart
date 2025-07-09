@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 class Dimens {
   Dimens._();
 
-  static width(BuildContext context) {
+  static double width(BuildContext context) {
     return MediaQuery.of(context).size.width;
   }
 
-  static height(BuildContext context) {
+  static double height(BuildContext context) {
     return MediaQuery.of(context).size.height;
   }
 

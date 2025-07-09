@@ -65,7 +65,7 @@ class LightTheme {
       fontFamily: 'Poppins',
       textTheme: textTheme,
       appBarTheme: const AppBarTheme(centerTitle: false),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(Dimens.dp8),
           side: BorderSide(color: borderColor),
